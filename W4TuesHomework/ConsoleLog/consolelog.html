@@ -1,0 +1,35 @@
+
+
+<!-- OPEN WITH LIVE SERVER!!! -->
+
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+
+    <ul id="your-best-friend">
+    <!--ul id above: We can reference the parent element via its id to get access to the content of its children. -->
+
+      <li>Has your back</li>
+      <li>Gives you support</li>
+      <li>Actively listens to you</li>
+      <li>Lends a helping hand</li>
+      <li>Cheers you up when you're down</li>
+      <li>Celebrates important moments with you</li>
+    </ul>
+
+
+    <script type="text/javascript">
+//use the developer tools to open the console and see that the values of each li have been printed out.
+        window.addEventListener("DOMContentLoaded", event => {
+            const parent = document.getElementById("your-best-friend");
+          const childNodes = parent.childNodes;
+         for (let value of childNodes.values()) {
+              console.log(value);
+            }
+        });
+    </script>
+
+
+  </body>
+</html>
