@@ -17,17 +17,14 @@
 
 [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 
+## `Event Handling`
+
+[Drag and Drop](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
 
 
-## `Arrow Function Expressions`
+# [Bookmarks for reference]
 
-[Arrow Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-
-
-
-# [MDN Notes for reference]
-
-`Links to topics from our lessons`
+## `Links to topics from our lessons`
 
 [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
@@ -36,3 +33,12 @@
 [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 [ul 'Unordered List'](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+
+
+---------
+
+## `Links Mentioned in Readings`
+
+[onclick vs addEventListener](https://www.simonewebdesign.it/onclick-vs-addeventlistener/) W4D3 Homework
+
+[GlobalEventHandlers](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) W4D3 Homework

@@ -1,0 +1,28 @@
+  <!-- OPEN WITH LIVE SERVER -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Event Handling: Common</title>
+    <!-- Let’s say we have a button element in an HTML file, like below: -->
+    <script src="Event Handling: Common.js"></script>
+    <link rel="stylesheet" href="Event Handling: Common.css" />
+  </head>
+  <body>
+<!-- BUTTON CLICK EVENT -->
+    <button id="increment-count">I have been clicked <span id="clicked-count">0</span> times</button>
+<!-- CHECKBOX CHECK EVENT -->
+    <!-- Note that we’ve added style="display:none" to the div so that,
+       when the page first loads and the box is unchecked, the div won’t show. -->
+    <h1>Pizza Toppings</h1>
+    <input type="checkbox" id="on-off">
+    <label for="on-off">Extra Cheese</label>
+    <!-- The line below works with our singular checkbox function -->
+    <!-- <div id="now-you-see-me" style="display:none">Add $1.00</div> -->
+    <!-- The line below works with our multi checkbox function -->
+    <div id="now-you-see-me" class="hide">Add $1.00</div>
+
+    <!-- Used for cyan background function -->
+    <input id="stopper" type="text" placeholder="Quick! Type STOP">
+  </body>
+  </html>
