@@ -1,0 +1,75 @@
+  <!-- OPEN WITH LIVE SERVER -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- update the lines below with necessary src -->
+    <script src="The Bubbling Principle.js"></script>
+    <link rel="stylesheet" href="The Bubbling Principle.css" />
+    <title>The Bubbling Principle</title>
+    <!-- Function #1 that works with the first paragraph -->
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", event => {
+        // Now listen for a click on the body
+        document.body.addEventListener("click", event => {
+          console.log("The body click event!");
+          console.log(event.target.id);
+        });
+      });
+    </script>
+    <!-- Function #2 that works with the second paragraph -->
+    <script>
+      window.addEventListener('DOMContentLoaded', event => {
+        function handler(e) {
+          console.log(e.currentTarget.tagName);
+        }
+        document.querySelector('main').addEventListener('click', handler);
+        document.querySelector('div').addEventListener('click', handler);
+        document.querySelector('p').addEventListener('click', handler);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <!-- Paragraph #1 -->
+        <p id="paragraph">
+          If you click on this paragraph, then the function listening on the body
+          will be called.
+        </p>
+        <!-- Whenever you click an element on the page, the browser will bubble
+          that event up through every ancestor of the element you clicked on.
+          If you have any event listeners on those elements, those will be called
+          on its way up (all the way up to the window object in fact). -->
+      </div>
+      <main>
+        <div>
+          <!-- Paragraph #2 -->
+          <p>This is a paragraph in a div in a main in a body in an html</p>
+          <!-- We could think of this succession of events as bubbles popping.
+             The innermost bubble (the <p> element) popped (i.e. logged to the console),
+                which caused its parent’s bubble to pop, which caused its parent’s bubble to pop.
+                 Since there aren’t any click handlers above the <main> nothing else happens on the
+                    page, but the bubbles would travel all the way up the DOM until they reached the
+                     top (<html>) looking for event handlers to run. -->
+        </div>
+      </main>
+    </div>
+      <!-- This <ul> works with the function inside of The Bubbling Principle.js -->
+    <ul id="my-list">
+      <li>This is list item 1.</li>
+      <li>This is list item 2.</li>
+      <li>This is list item 3.</li>
+      <li>This is list item 4.</li>
+      <li>This is list item 5.</li>
+    </ul>
+      <!-- When clicked on, a single <li> element becomes the event.target
+         -- the object that dispatched the event. The <ul> element is the
+            event.currentTarget -- the element to which the event handler
+             has been attached. -->
+  </body>
+  </html>

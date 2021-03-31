@@ -42,3 +42,7 @@
 [onclick vs addEventListener](https://www.simonewebdesign.it/onclick-vs-addeventlistener/) W4D3 Homework
 
 [GlobalEventHandlers](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) W4D3 Homework
+
+[Bubbling & Capturing](https://javascript.info/bubbling-and-capturing) W4D3 Homework
+
+[Bubble Inside Bubble Video](https://www.youtube.com/watch?v=OntX1115Tw4)W4D3 Homework
