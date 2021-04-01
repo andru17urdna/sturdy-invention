@@ -1,7 +1,7 @@
       1. Read the readme first!!
       2. Rightclick on The Bookmarks.md and click preview.
 
-# [MDN]
+# MDN
 
 ## `HTML`
 
@@ -22,7 +22,8 @@
 [Drag and Drop](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
 
 
-# [Bookmarks for reference]
+
+# Bookmarks for Reference
 
 ## `Links to topics from our lessons`
 
@@ -39,10 +40,21 @@
 
 ## `Links Mentioned in Readings`
 
-[onclick vs addEventListener](https://www.simonewebdesign.it/onclick-vs-addeventlistener/) W4D3 Homework
+### W4D3 Homework
 
-[GlobalEventHandlers](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) W4D3 Homework
+[onclick vs addEventListener](https://www.simonewebdesign.it/onclick-vs-addeventlistener/)
 
-[Bubbling & Capturing](https://javascript.info/bubbling-and-capturing) W4D3 Homework
+[GlobalEventHandlers](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)
 
-[Bubble Inside Bubble Video](https://www.youtube.com/watch?v=OntX1115Tw4)W4D3 Homework
+[Bubbling & Capturing](https://javascript.info/bubbling-and-capturing)
+
+[Bubble Inside Bubble Video](https://www.youtube.com/watch?v=OntX1115Tw4)
+
+### W4D4 Homework
+
+[String Escape Sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Escape_notation)
+
+
+# Outside Bookmarks for Reference
+
+[Cookies vs localStorage](https://medium.datadriveninvestor.com/cookies-vs-local-storage-2f3732c7d977)
