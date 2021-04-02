@@ -2,11 +2,16 @@
 
 ## Browser Basics
   1. Explain the difference between the BOM (browser object model) and the DOM(document object model).
+     - The BOM (Browser Object Model) consists of the objects  navigator, history, screen, location and document which are children of window. In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page. You can manipulate it using javascript.
+
 
   2. Given a diagram of all the different parts of the Browser identify each part.
 
   3. Use the Window API to change the innerHeight of a user's window.
+     - The Window.resizeTo() method dynamically resizes the window.
 
+            SYNTAX:
+               window.resizeTo(width, height)
   4. Identify the context of an anonymous functions running in the Browser (the window).
 
   5. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when all the elements on the page load (using DOMContentLoaded)
