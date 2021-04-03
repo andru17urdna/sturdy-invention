@@ -4,29 +4,103 @@
   1. Explain the difference between the BOM (browser object model) and the DOM(document object model).
      - The BOM (Browser Object Model) consists of the objects  navigator, history, screen, location and document which are children of window. In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page. You can manipulate it using javascript.
 
-
+-----
   2. Given a diagram of all the different parts of the Browser identify each part.
+  ![Browser](./images/browser.png)
 
+- 1. User Interface
+    - what users interact with
+	  - address bar, back/forward buttons, bookmarks, etc.
+	  - everything except page content
+
+- 2. Browser Engine
+	- manages interactions between UI and rendering engine
+	- communicates user input to rendering engine
+
+- 3. Render Engine
+	- displays requested page content
+	 - parses HTML and uses CSS to build render tree and display content
+	 - constructs DOM (obj rep of document tree)
+	 - not all browsers use same rendering engnie
+	 	 - this is why things look different
+		 - chrome (Blink), safari (Webkit)
+
+- 4. Networking
+	- sends network calls, i.e http requests to server
+	- asks for images, docs, etc. that make up page
+
+- 5. Javascript Interpreter
+	- parses and executes JS code (v8)
+
+- 6. UI Backend
+	- used for drawing basic widgets like checkboxes, inputs, etc.
+
+- 7. Data Storage
+	- persistence of data in browser (i.e cookies, web storage)
+	 - small database used to preserve state btwn refreshes
+	 - cookies vs web storage
+		 - Cookies can be read by the server as well as the client.
+		 - Web storage data can be read only client-side.
+		 - more to come
+-----
   3. Use the Window API to change the innerHeight of a user's window.
      - The Window.resizeTo() method dynamically resizes the window.
 
             SYNTAX:
                window.resizeTo(width, height)
+
+-----
   4. Identify the context of an anonymous functions running in the Browser (the window).
+  - The window object.
 
+      - The window object is the context of a function running in the browser. Context and scope refer to different things. Scope refers to the visibility of function variables, while context refers to the object that owns that function, or how that function is invoked. Unbound functions that run in the browser default to the window object, while functions that are bound to function declarations have a context object of the function to which they belong.
+-----
   5. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when all the elements on the page load (using DOMContentLoaded)
-
+    
+-----
   6. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when the page loads
-
+-----
   7. Identify three ways to prevent JS code from executing until an entire HTML page is loaded
 
+  - Use a DOMContentLoaded event listener
+  - Put the script in the bottom of the HTML file
+  - Add an attribute to the script tag (like async, or defer)
+-----
   8. Label a diagram on the Request/Response cycle.
 
-  9. Explain the Browser's main role in the request/response cycle.
+  ![Browser](./images/request-response-cycle.png)
 
-  10. Given several detractors - identify which real-world situations could be implemented with the Web Storage API
+  - 1 Client Side (browser)
+	 - what user interacts with
 
-  11. Given a website to visit that depends on cookies (like Amazon), students should be able to go to that site add something to their cart and then delete that cookie using the Chrome Developer tools in order to empty their cart.
+- 2 Internet
+	 - series of client req and server responses
+	 - more on this to come
+
+- 3 Server side
+	 - handles req and sends res
+	 - more on this later
+-----
+9. Explain the Browser's main role in the request/response cycle.
+
+- used to make req to server
+  - can view req/res in Network Tab of Developer Tools
+- parses HTML, CSS, JS
+- renders info to user by constructing & rendering DOM tree
+-----
+ 10. Given several detractors - identify which real-world situations could be implemented with the Web Storage API
+
+ - Storing any key-value pair information that doesn’t need to be read by the server
+
+ - Storing session-specific information, such as filled-out form inputs
+
+ - Storing information about a user’s buying habits on an e-commerce website
+
+ - Storing data that can persist from page to page of a website, such as a shopping cart or reward points
+
+        You could use the Web Storage API to: 1. Store information about a user’s buying habits, 2. Store session-specific information, such as a filled-out form, 3. Store data that can persist from page to page, and 4. Store any key-value pair that doesn’t need to be read by the server. Cookies are separate from and pre-date web storage. Cookies can be read by the server as well as the client. Web storage data can be read only client-side.
+-----
+11. Given a website to visit that depends on cookies (like Amazon), students should be able to go to that site add something to their cart and then delete that cookie using the Chrome Developer tools in order to empty their cart.
 
 ## Element Selection
   1. Given HTML that includes `<div id=”catch-me-if-you-can”>HI!</div>`, write a JavaScript statement that stores a reference to the HTMLDivElement with the id “catch-me-if-you-can” in a variable named “divOfInterest”.
