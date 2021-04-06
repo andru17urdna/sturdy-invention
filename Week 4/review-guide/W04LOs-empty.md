@@ -49,22 +49,27 @@
             SYNTAX:
                window.resizeTo(width, height)
 
+            Also:
+              newWindow = window.open("https://www.google.com", "Google Homepage", "width=100, height=100");
+              newWindow.resizeTo(400, 200)
+
 -----
-  4. Identify the context of an anonymous functions running in the Browser (the window).
+  4. Identify the context of an anonymous function running in the Browser (the window).
   - The window object.
 
       - The window object is the context of a function running in the browser. Context and scope refer to different things. Scope refers to the visibility of function variables, while context refers to the object that owns that function, or how that function is invoked. Unbound functions that run in the browser default to the window object, while functions that are bound to function declarations have a context object of the function to which they belong.
 -----
   5. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when all the elements on the page load (using DOMContentLoaded)
-    
+- window.addEventListener('DOMContentLoaded', (event) => {})
 -----
   6. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when the page loads
+- window.onload = 'somefunction'
 -----
   7. Identify three ways to prevent JS code from executing until an entire HTML page is loaded
 
   - Use a DOMContentLoaded event listener
   - Put the script in the bottom of the HTML file
-  - Add an attribute to the script tag (like async, or defer)
+  - Add an attribute to the script tag (like async, or defer, you can add both asynch and defer)
 -----
   8. Label a diagram on the Request/Response cycle.
 
@@ -75,6 +80,7 @@
 
 - 2 Internet
 	 - series of client req and server responses
+   - nebulous cloud
 	 - more on this to come
 
 - 3 Server side

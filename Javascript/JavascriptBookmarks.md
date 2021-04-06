@@ -24,6 +24,10 @@
 
 [Arrow Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
+## `OOP Reference Sheet`
+
+[Terms for Reference](https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-5-mar-2021-cohort-1-online/oop-reference-sheet)
+
 
 
 # [MDN Notes for reference]
